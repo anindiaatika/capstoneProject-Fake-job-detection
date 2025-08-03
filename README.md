@@ -11,18 +11,10 @@ Dataset yang digunakan bersifat publik dan diambil dari Kaggle. Proyek ini menge
 Dataset: Real or Fake? Fake Jobposting Prediction (https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction)
 
 ## 3.Analysis Process
-Analisis dilakukan dalam dua tahap utama:
-### 1. **Model Klasifikasi BiLSTM**
-- Melalui tahapan preprocessing (cleaning, tokenizing, padding)
-- Dilatih menggunakan model BiLSTM untuk klasifikasi fake/real
-- Hasilnya menunjukkan akurasi yang cukup tinggi dan dapat digunakan sebagai baseline
-
-### 2. **Insight dengan IBM Granite LLM**
-- Digunakan untuk menggali pemahaman yang lebih dalam terhadap karakteristik job posting palsu
-- Proses ini dilakukan dengan prompt-prompt berbasis pertanyaan seperti:
-  - Pola umum dalam deskripsi pekerjaan palsu
-  - Perbedaan struktur dan bahasa antara lowongan asli dan palsu
-  - Evaluasi terhadap contoh deskripsi pekerjaan
+- Preprocessing dan tokenisasi data
+- Pelatihan model BiLSTM
+- Evaluasi performa model
+- Analisis eksploratif dengan LLM IBM Granite melalui prompt-prompt analisis
 
 ## 4. Insight & Findings
 Berikut beberapa insight utama dari hasil analisis:
